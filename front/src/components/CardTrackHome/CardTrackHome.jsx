@@ -1,6 +1,6 @@
 import React from 'react'
-
-const Card = () => {
+import './CardTrackHome.scss';
+const CardTrackHome = () => {
   return (
     <div className='card'>
         <div>
@@ -9,4 +9,4 @@ const Card = () => {
     </div>
   )
 }
-export default Card;
+export default CardTrackHome;
