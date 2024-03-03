@@ -32,16 +32,16 @@ services:
       - 80:80
       - 443:443
 
-  db:
-    container_name: database
-    image: postgres:latest
-    env_file: db.env
-    healthcheck:
-      test: [ "CMD-SHELL", "sh -c 'pg_isready -U ${DBUSER} -d ${DBNAME}'" ]
-      interval: 10s
-      timeout: 3s
-      retries: 10
-    volumes:
-      - ./db-data:/var/lib/postgresql/data
-    ports:
-      - 5432:5432
+  # db:
+  #   container_name: database
+  #   image: postgres:latest
+  #   env_file: db.env
+  #   healthcheck:
+  #     test: [ "CMD-SHELL", "sh -c 'pg_isready -U ${DBUSER} -d ${DBNAME}'" ]
+  #     interval: 10s
+  #     timeout: 3s
+  #     retries: 10
+  #   volumes:
+  #     - ./db-data:/var/lib/postgresql/data
+  #   ports:
+  #     - 5432:5432
