@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "VK Sans Display Medium";
+    font-style: normal;
+    src: local("VK Sans Display Medium"),
+    url("./VKSansDisplay-Medium.ttf") format("truetype"),
+
+}
+@font-face {
+    font-family: "VK Sans Display Regular";
+    font-style: normal;
+    src: local("VK Sans Display Regular"),
+    url("./VKSansDisplay-Regular.ttf") format("truetype"),
+    
+}

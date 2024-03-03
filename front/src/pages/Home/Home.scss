@@ -1,17 +1,4 @@
-@font-face {
-    font-family: "VK Sans Display Medium";
-    font-style: normal;
-    src: local("VK Sans Display Medium"),
-    url("/wp-content/themes/bs-base-vite/assets/fonts/VKSansDisplay-Medium.ttf") format("ttf"),
 
-}
-@font-face {
-    font-family: "VK Sans Display Regular";
-    font-style: normal;
-    src: local("VK Sans Display Regular"),
-    url("/wp-content/themes/bs-base-vite/assets/fonts/VKSansDisplay-Regular.ttf") format("ttf"),
-    
-}
 .home {
     display: flex;
     flex-direction: column;
