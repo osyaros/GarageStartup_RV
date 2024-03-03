@@ -1,7 +1,6 @@
 import React from 'react';
 import './Header.scss';
-import logo from './logo.svg';
-import profile from './profile.svg';
+import logo from './../../assets/logo.svg';
 const Header = () => {
   return (
     <div className='header'>
