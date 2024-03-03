@@ -1,8 +1,6 @@
 import React from 'react'
 import Header from '../../components/Header/Header.jsx'
 import './Home.scss';
-import AboutUs from '../../components/AboutUs/AboutUs.jsx';
-import CardsHomeBlock from '../../components/CardsHomeBlock/CardsHomeBlock.jsx';
 import backphoto from './background.png';
 export const Home = () => {
   return (  
