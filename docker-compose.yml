@@ -20,8 +20,6 @@ services:
     image: nginx:latest
     container_name: nginx
     restart: always
-    depends_on:
-      - app
     volumes:
       - ./nginx:/etc/nginx/conf.d
       - /etc/letsencrypt:/etc/letsencrypt
