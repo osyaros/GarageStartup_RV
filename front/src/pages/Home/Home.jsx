@@ -32,7 +32,8 @@ export const Home = () => {
               <span>
                 Давайте это докажем
               </span>
-              <button>
+              <a href="https://t.me/STT_manager_bot">
+              <button >
                 <span>
                 решить вопросики
                 </span>
@@ -40,6 +41,8 @@ export const Home = () => {
                   <path d="M18.472 6.08L14.512 9.992L13.192 8.672L15.16 6.704L15.136 6.488H0.496V4.376H15.136L15.16 4.184L13.192 2.216L14.512 0.871999L18.472 4.832V6.08Z" fill="black"/>
                   </svg>
               </button>
+              </a>
+              
             </div>
           </div>
       </div>
