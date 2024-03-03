@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../assets/fonts/fonts.css';
+import '../../../public/fonts/fonts.css';
 import Header from '../../components/Header/Header.jsx'
 import './Home.scss';
 import backphoto from './background.png';
