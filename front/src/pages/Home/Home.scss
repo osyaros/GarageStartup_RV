@@ -1,83 +1,114 @@
-.background {
-    background-image: url('./background.jpg');
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    height: 46.5em; /* Высота фонового блока */
-    z-index: 0; /* Устанавливаем z-index фонового изображения */
-    display: flex;
-    flex-direction: column;
-    &__title{
-        max-width: 950px;
-        line-height: 1.3em;
-        font-family: "Kanit", sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        color: #FFFF;
-        font-size: 88px;
-        position: absolute;
-        top:0.9em;
-        margin-left: 97px;
-    }
-    &__downtitle{
-        max-width: 675px;
-        line-height: 1em;
-        font-family: "Kanit", sans-serif;
-        font-weight: 300;
-        font-style: normal;
-        color: #FFFF;
-        font-size: 25px;
-        position: absolute;
-        margin-top:13em;
-        margin-left: 97px;
-    }
-    &__btn{
-        width: 283px;
-        height: 52px;
-        margin-left: 97px;
-        margin-top: 36em;
-        button{
-            display: inline-flex;
-            padding: 14px 41px;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            border-radius: 15px;
-            background: #FFF500;
-            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-            color: #000;
-            font-family: Kanit;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 500;
-            color: #000;
-            font-family: "Kanit", sans-serif;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 120% /* 24px */;
-            transition: 0.4s;
-            &:hover {
-                background-color: #222222;
-                color: #ffffff;
-            }
-    
-            &:hover::before {
-                transform: translateX(0px);
-                transition: transform 500ms ease-in-out;
-            }
-        }
-    }
+@font-face {
+    font-family: "VK Sans Display Medium";
+    font-style: normal;
+    src: local("VK Sans Display Medium"),
+    url("./../../../fonts/VKSansDisplay-Medium.ttf") format("ttf"),
     
 }
-
+@font-face {
+    font-family: "VK Sans Display Regular";
+    font-style: normal;
+    src: local("VK Sans Display Regular"),
+    url("./../../../fonts/VKSansDisplay-Regular.ttf") format("ttf"),
+    
+}
 .home {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: #222222;
-    max-width: 1440px;
-    overflow: hidden; /* Предотвращает появление скроллбара из-за фонового блока */
+    margin-bottom: 0;
+    padding-bottom: 0;
+    background-color: #000;
+    justify-content: center;
+    overflow: hidden;
+   
+    &__wrap{
+        width: 93vw;
+        height: auto;
+        border-radius: 20px;
+        background: #232426;
+        display: flex;
+        justify-content: center;
+        margin-left: 2em;
+        margin-right: 2em;
+        margin-top: 1em;
+        flex-direction: column;
+        
+        &__background {
+            width: 91vw;
+            height: auto;
+            margin-top: 12px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 1em;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            &__extra{
+                position: absolute;
+                top:27vh;
+                margin-left: 97px;
+                &__title{
+                    max-width: 163.7931vh;
+                    line-height: 1.3em;
+                    font-family: "VK Sans Display Medium";
+                    font-weight: 500;
+                    font-style: normal;
+                    color: #FFFF;
+                    font-size: 11.0345vh;
+                    margin-top: 3vh;
+                }
+                &__downtitle{
+                    width: 80.6897vh;
+                    color:  #FFF;
+                    text-shadow: 0px 0px 7.5px rgba(0, 0, 0, 0.25);
+                    font-family: "VK Sans Display Regular";
+                    font-size: 4.4828vh;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 120% /* 31.2px */;
+                    margin-top:5vh;
+                }
+            }
+            
+            
+        }
+        &__extrablocks{
+            display: flex;
+            flex-direction: row;
+            margin-left: 1em;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            &__att{
+                display: flex;
+                width: 389px;
+                height: 203px;
+                border-radius: 10px;
+                background: #34363A;
+                justify-content: center;
+                align-items: center;
+                span{
+                    width: 310px;
+                    height: 148px;
+                    flex-shrink: 0;
+                    color: #FFF;
+                    font-family: "VK Sans Display Regular";
+                    font-size: 36px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 120%;
+                    b{
+                        font-family: "VK Sans Display Medium";
+
+                    }
+                }
+                
+            }
+        }
+    }
+    
 }
 
    

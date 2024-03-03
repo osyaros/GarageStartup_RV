@@ -37,10 +37,7 @@ h1, h2, h3, h4, h5, h6, p {
 ul, ul li {
 	list-style: none;
 }
-body{
-	margin: 0;
-	width: 100%;
-}
+
 img {
 	vertical-align: top;
 }

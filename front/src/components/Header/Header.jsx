@@ -22,9 +22,6 @@ const Header = () => {
                 маршруты
             </li>
         </div>
-        <div className='header__profile'>
-            <img src={profile} />
-        </div>
     </div>
   )
 };

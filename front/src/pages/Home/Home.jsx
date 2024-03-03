@@ -2,30 +2,37 @@ import React from 'react'
 import Header from '../../components/Header/Header.jsx'
 import './Home.scss';
 import AboutUs from '../../components/AboutUs/AboutUs.jsx';
+import CardsHomeBlock from '../../components/CardsHomeBlock/CardsHomeBlock.jsx';
+import backphoto from './background.png';
 export const Home = () => {
   return (  
     <div className='home'>
       <Header />
-      <div className="background">
-        <div className='background__title'>
-          <span>Комфортно наедине с природой </span>
-        </div>
-        <div className='background__downtitle'>
-          <h3>
-            Аренда автодомов и уникальные маршруты для незабываемых путешествий по всей стране. Путешествуйте с комфортом и свободой, изучайте новые места с нами!
-          </h3>
-        </div>
-        <div className='background__btn'>
-          <button>начать путешествие </button>
-        </div>
-        
+      <div className="home__wrap">
+        <div className='home__wrap__background'>
+          <img src={backphoto}/>
+          <div className='home__wrap__background__extra'>
+            <div className='home__wrap__background__extra__title'>
+                <span>Комфортно наедине с природой </span>
+              </div>
+              <div className='home__wrap__background__extra__downtitle'>
+                <h3>
+                Почему Вы должны попробовать путешествие с автодомом?
+                </h3>
+              </div>
+            </div>
+          </div>
+          
+          <div className='home__wrap__extrablocks'>
+            <div className='home__wrap__extrablocks__att'>
+              <span>Самый выгодный и <b>необычный</b> туризм</span>
+            </div>
+            <div className='home__wrap__extablocks__block'>
+
+            </div>
+          </div>
       </div>
-      <div>
-        <h3>
-          Мы организуем путешествия на автодомах и сдаем их в аренду по всему миру. Работаем с проверенными турецкими прокатными компаниями.
-        </h3>
-      </div>
-      <AboutUs />
+      
     </div>
     
   )
