@@ -2,14 +2,14 @@
     font-family: "VK Sans Display Medium";
     font-style: normal;
     src: local("VK Sans Display Medium"),
-    url("./../../../fonts/VKSansDisplay-Medium.ttf") format("ttf"),
-    
+    url("../../assets/fonts/VKSansDisplay-Medium.ttf") format("ttf"),
+
 }
 @font-face {
     font-family: "VK Sans Display Regular";
     font-style: normal;
     src: local("VK Sans Display Regular"),
-    url("./../../../fonts/VKSansDisplay-Regular.ttf") format("ttf"),
+    url("../../assets/fonts/VKSansDisplay-Regular.ttf") format("ttf"),
     
 }
 .home {
@@ -21,27 +21,28 @@
     background-color: #000;
     justify-content: center;
     overflow: hidden;
-   
+  
     &__wrap{
         width: 93vw;
         height: auto;
-        border-radius: 20px;
+        border-radius: 1.6vh;
         background: #232426;
         display: flex;
         justify-content: center;
-        margin-left: 2em;
-        margin-right: 2em;
+        margin-left: 3.5vw;
+        margin-right: 4.5vw;
         margin-top: 1em;
         flex-direction: column;
         
         &__background {
             width: 91vw;
             height: auto;
-            margin-top: 12px;
-            border-radius: 10px;
+            margin-top: 0.96vh;
+            border-radius: 0.8vh;
             display: flex;
             flex-direction: column;
-            margin-left: 1em;
+            margin-left: 1vw;
+            margin-right: 1vw;
             img{
                 width: 100%;
                 height: 100%;
@@ -49,9 +50,9 @@
             &__extra{
                 position: absolute;
                 top:27vh;
-                margin-left: 97px;
+                margin-left: 7.76vh;
                 &__title{
-                    max-width: 163.7931vh;
+                    width: 163.7931vh;
                     line-height: 1.3em;
                     font-family: "VK Sans Display Medium";
                     font-weight: 500;
@@ -78,33 +79,95 @@
         &__extrablocks{
             display: flex;
             flex-direction: row;
-            margin-left: 1em;
-            margin-top: 1em;
-            margin-bottom: 1em;
+            margin: 1em;
+            column-gap:1vw;
             &__att{
                 display: flex;
-                width: 389px;
-                height: 203px;
-                border-radius: 10px;
+                width: 31.12vw;
+                height: 35vh;
+                border-radius: 1.724vh;
                 background: #34363A;
                 justify-content: center;
                 align-items: center;
                 span{
-                    width: 310px;
-                    height: 148px;
+                    width: 24.80vw;
+                    height: 25.517vh;
                     flex-shrink: 0;
                     color: #FFF;
                     font-family: "VK Sans Display Regular";
-                    font-size: 36px;
+                    font-size: 6.207vh;
                     font-style: normal;
                     font-weight: 400;
                     line-height: 120%;
+                    padding-left: 1vw;
                     b{
                         font-family: "VK Sans Display Medium";
 
                     }
                 }
                 
+            }
+            &__block{
+                width: 64.92vw;
+                height: 35vh;
+                display: flex;
+                flex-direction: column;
+                flex-shrink: 0;
+                border-radius: 3vh;
+                background: #193435;
+                padding-right: 2vw;
+                h2{
+                    margin-left: 6vh;
+                    margin-top: 4vh;
+                    color: #00FFEA;
+                    font-family: "VK Sans Display Medium";
+                    font-size: 6.207vh;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 120% /* 43.2px */;
+                   
+                }
+                span{
+                    width: 50vh;
+                    margin-left: 6vh;
+                    margin-top: 2vh;
+                    color: #07C2B4;
+                    text-shadow: 0px 0px 7.5px rgba(0, 0, 0, 0.25);
+                    font-family: "VK Sans Display Regular";
+                    font-size: 4.483vh;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 120% /* 31.2px */;
+                    
+                }
+                button{
+                    width: 60.56vw;
+                    height: 9vh;
+                    margin-top: 4vh;
+                    margin-left: 6vh;
+                    flex-shrink: 0;
+                    border-radius: 8px;
+                    background: #00FFEA;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    span{
+                        color: #000;
+                        font-family: "VK Sans Display Medium";
+                        font-size: 4.138vh;
+                        font-style: normal;
+                        font-weight: 500;
+                        margin-bottom: 3vh;
+                        width: 110vh;   
+                        height: auto;
+                        margin-left: -15vw;
+
+                   }
+                   svg{
+                    margin-left: 18vw;
+                   
+                   }
+                }
             }
         }
     }
